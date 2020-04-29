@@ -4,18 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 6</title>
+    <title>Primeiros passos com DOM</title>
 
     <style>
         body {
-            font: normal 20pt Arial
+            font: normal 12pt Arial;
+            color: white;
+            background: #6d2baa;
         }
     </style>
 
 </head>
 
 <body>
+    <h1>Iniciando estudos com DOM</h1>
 
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong> DOM</strong> em JavaScript</p>
+    <div id="msg" name="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write(p1.innerText);
+
+
+        /*var div1 = window.document.getElementById('msg');
+        div1.style.background= 'green';
+       // div1.innerText = 'estou aguardando ...';
+       */
+
+        var d = window.document.getElementsByName('msg')[0];
+        d.innerText = 'Ola! ';
+
+        var d2 = window.document.querySelector('div#msg');
+        d2.innerText = 'Usando querySelector';
+    </script>
 </body>
 
 </html>

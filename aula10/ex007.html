@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando </title>
+    <style>
+        body {
+            font: normal 12pt Times;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> =
+    <input type="number" name="txtn3" id="txtn3" readonly>
+    <input type="button" onclick="Somar()" name="btn" id="btn" value="Somar">
+
+    <script>
+        var num1 = window.document.getElementById('txtn1')
+        var num2 = window.document.getElementById('txtn2')
+        var num3 = window.document.getElementById('txtn3')
+        var som = window.document.querySelector('input#btn')
+
+        function Somar() {
+            num3.value = Number(num2.value) + Number(num1.value);
+
+        }
+    </script>
+</body>
+
+</html>
