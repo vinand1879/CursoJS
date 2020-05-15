@@ -9,4 +9,5 @@ var cont = 0;
 }*/
 do {
     console.log(`Do ${cont}`);
+    cont++
 } while (cont < 6);
