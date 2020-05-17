@@ -4,20 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Contador</title>
+
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <p> Inicio:
+                <input type="number" name="cInicio" id="cInicio"></p>
+            <p>Fim:
+                <input type="number" name="cFim" id="cFim"></p>
+            <p>Intervalo:
+                <input type="number" name="inter" id="inter">
+            </p>
+            <br>
+            <input type="button" value="Contar" onclick="contar()">
         </div>
-        <div>
 
+        <br>
+        <div id="res">
+            Esperando ...
         </div>
     </section>
     <footer>

@@ -1,6 +1,7 @@
 body {
-    background: rgb(53, 53, 158);
-    font: normal 15 pt Arial;
+    background: #35359e;
+    font: normal 22 pt Arial;
+    font-size: 15px;
 }
 
 header {
@@ -15,6 +16,15 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.575);
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(2, 1, 1);
+    border-radius: 4px;
 }
 
 footer {
